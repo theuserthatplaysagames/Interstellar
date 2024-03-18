@@ -68,7 +68,7 @@ const fetchData = async (req, res, next, baseUrl) => {
   } catch (error) {
     console.error('Error fetching:', error)
     next(error)
-  }
+  } 
 }
 server.on('request', (req, res) => {
   if (bareServer.shouldRoute(req)) {
